@@ -1,0 +1,15 @@
+start - Welcome message and basic information
+info - Detailed information about the (<rfof-network.org>)
+abillityprice - Current price of the token
+nanoprice - Current price of the Nanotechnologie
+abillitybalance - Check the abillitytoken balance of a specific wallet address (Use: /balance <address>)
+transfer - Transfer tokens between addresses (Use: /transfer <from> <to> <amount> <private_key>)
+abillitytransactions - View abillitytransactions history and details
+nanotransactions - View nanotransaction history and details
+security - Security tips and guidelines
+support - Contact support for assistance
+news - Latest news and updates about the token
+community - Join the community discussion group
+viptelegram - viptelegram & Tonvip Content
+cooperation - Request or Formular to make your cooperation with the (<rfof-network.org>)
+empty - Clear the list or data
