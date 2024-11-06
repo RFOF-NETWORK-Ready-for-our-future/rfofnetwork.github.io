@@ -27,7 +27,10 @@ project-root/
 │   └── validation.py
 ├── config/                  # Konfigurationsdateien für APIs und Netzwerke
 │   └── config.yaml
-└── .devcontainer/           # Entwicklungscontainer für Multi-Chain-Support
+└── .devcontainer/
+# Entwicklungscontainer für
+     |_ RFOF_matrix
+Multi-Chain-Support
     └── devcontainer.json
 ```
 
