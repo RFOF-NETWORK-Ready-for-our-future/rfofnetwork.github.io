@@ -1,0 +1,33 @@
+{
+    "name": "RFOF Network Development Environment",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "npm install",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "forwardPorts": [3000],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "python.pythonPath": "/usr/local/bin/python3"
+            },
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    }
+}
