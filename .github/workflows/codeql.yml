@@ -12,14 +12,20 @@
 name: "CodeQL Advanced"
 
 on:
-  push:
+  push: main
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:
     - cron: '32 23 * * 2'
 
-jobs:
+    branches: [ "gh-pages" ]
+  pull_request:
+    branches: [ "gh-pages" ]
+  schedule:
+    - cron: '29 15 * * 1'
+
+jobs: gh-pages'
   analyze:
     name: Analyze (${{ matrix.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
@@ -41,10 +47,12 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:
+      matrix: main
         include:
         - language: python
-          build-mode: none
+          build-modes
+          include: gh-pages
+      
         # CodeQL supports the following values keywords for 'language': 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
